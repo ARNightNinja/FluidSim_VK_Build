@@ -148,14 +148,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/ArchiveForYG.loader.js'
+                    unityLoader.src = 'Build/FluidSim.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/9f253719ef167b0a7efc5a09ef450cae.data.unityweb',
-                                frameworkUrl: 'Build/30937d1cd2ac6c44fa6ddbb614a1f443.js.unityweb',
-                                codeUrl: 'Build/ba31f9268e77e09452a77040fc5c595c.wasm.unityweb',
+                                dataUrl: 'Build/fd17d355d5b55243f7d85cb091062862.data.unityweb',
+                                frameworkUrl: 'Build/bd937ded7b62b22b837fec71232de212.js.unityweb',
+                                codeUrl: 'Build/e3c9cfa57b52cf093b28d4168a85a05c.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
                                 productName: 'FluidSim',
